@@ -1,0 +1,22 @@
+{
+    "name": "bramhalock/web-portal",
+    "description": "BramhaLock Web Portal API",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "BramhaLock\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"copy('.env.example', '.env');\""
+        ]
+    }
+}

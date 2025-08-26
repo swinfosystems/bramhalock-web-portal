@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bramhalock-web-portal
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        value: "REPLACE_WITH_EXTERNAL_POSTGRES_URL" # e.g. postgres://user:pass@host:port/db
+      - key: PHP_VERSION
+        value: "8.2"
